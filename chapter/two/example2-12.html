@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML显示JSON数据</title>
+</head>
+<body>
+<h2>HTML显示JSON数据</h2>
+<p>
+    First Name:<span id="fname"></span><br/>
+    Last Name:<span id="lname"></span><br/>
+</p>
+<script type="text/javascript">
+    var txt = '{"firstName":"张","lastName":"三"}'
+    var obj = eval ("("+txt+")");
+    document.getElementById("fname").innerHTML=obj.firstName
+    document.getElementById("lname").innerHTML=obj.lastName
+</script>
+</body>
+</html>
